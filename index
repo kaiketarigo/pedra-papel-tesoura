@@ -1,0 +1,57 @@
+
+from tkinter import *
+
+while 1<=10:
+
+    from random import randint
+    from time import sleep
+    itens = ('pedra', 'papel', 'tesoura')
+    computador = randint(0, 2)
+    print('''OPÇÕES
+        0 - PEDRA
+        1 - PAPEL
+        2 - TESOURA''')
+    nome = input('seu nome: ')
+    jogador = int(input('escolha: '))
+    print('pedra')
+    sleep (1)
+    print('papel')
+    sleep (1)
+    print('tesoura')
+    sleep(1)
+    print('-=' *10)
+    print('pc escolheu {}'.format(itens[computador]))
+    print(nome, 'escolheu {}'.format(itens[jogador]))
+    print('-=' *10)
+    count=0 
+    if computador == 0:
+        if jogador ==0:          
+            print('EMPATE')           
+        if jogador ==1:          
+            print(nome,'ganhou')          
+        if jogador ==2:        
+            print("PC ganhou")
+    elif computador == 1:
+        if jogador ==0:            
+            print('PC ganhou')           
+        if jogador ==1:            
+            print('EMPATE')
+        if jogador ==2:                    
+            print(nome, "ganhou")
+    elif computador == 2:
+        if jogador ==0:         
+            print(nome,'ganhou')
+        if jogador ==1:         
+            print('PC ganhou')           
+        if jogador ==2:           
+            print("EMPATE")
+            
+
+
+
+
+
+
+         
+
+
